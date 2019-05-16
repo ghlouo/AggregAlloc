@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="rule">
+            <h2><span>Rule</span> {{rule.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span>Rule Id</span></dt>
+                <dd>
+                    <span>{{rule.ruleId}}</span>
+                </dd>
+                <dt><span>Rule Description</span></dt>
+                <dd>
+                    <span>{{rule.ruleDescription}}</span>
+                </dd>
+                <dt><span>Max Container</span></dt>
+                <dd>
+                    <span>{{rule.maxContainer}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/rule', rule.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

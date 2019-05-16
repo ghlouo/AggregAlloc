@@ -1,0 +1,27 @@
+{
+    "name": "Rule",
+    "fields": [
+        {
+            "fieldName": "ruleId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ruleDescription",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "maxContainer",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190516080022",
+    "entityTableName": "rule",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
